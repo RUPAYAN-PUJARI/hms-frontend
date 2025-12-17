@@ -18,7 +18,7 @@ import MedicalInformationIcon from "@mui/icons-material/MedicalInformation";
 import TodayIcon from "@mui/icons-material/Today";
 import EventIcon from "@mui/icons-material/Event";
 
-const API = "http://localhost:5000";
+const API = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000";
 const DOCTOR_ID = "DOC01";
 
 // Styled components to match app theme

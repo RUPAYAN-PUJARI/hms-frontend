@@ -15,7 +15,7 @@ import PatientForm from "../../components/PatientForm";
 import AssignmentIcon from "@mui/icons-material/Assignment";
 import PersonAddAltIcon from "@mui/icons-material/PersonAddAlt";
 
-const API = "http://localhost:5000";
+const API = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000";
 
 // Styled components for futuristic theme
 const GradientBackground = styled(Box)(({ theme }) => ({

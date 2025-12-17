@@ -24,7 +24,7 @@ import GroupsIcon from "@mui/icons-material/Groups";
 import Navbar from "../../components/Navbar";
 import UserModal from "../../components/UserModal";
 
-const API = "http://localhost:5000";
+const API = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000";
 
 // Styled Components for Futuristic Design
 const GradientBackground = styled(Box)(({ theme }) => ({

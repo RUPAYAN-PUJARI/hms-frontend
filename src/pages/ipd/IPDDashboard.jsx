@@ -13,7 +13,7 @@ import LocalHotelIcon from "@mui/icons-material/LocalHotel";
 import Navbar from "../../components/Navbar";
 import BedAssignForm from "../../components/BedAssignForm";
 
-const API = "http://localhost:5000";
+const API = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000";
 
 // Styled components for futuristic theme
 const GradientBackground = styled(Box)(({ theme }) => ({
@@ -219,7 +219,8 @@ export default function IPDDashboard() {
                     flex: 0.8,
                     renderCell: (params) => {
                       const status = (params.value || "").toLowerCase();
-                      const color = status === "available" ? "#166534" : "#991b1b";
+                      const color =
+                        status === "available" ? "#166534" : "#991b1b";
                       return (
                         <span
                           style={{

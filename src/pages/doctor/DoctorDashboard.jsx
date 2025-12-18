@@ -56,7 +56,7 @@ const StyledCard = styled(Card)(({ theme }) => ({
 
 const StyledDataGrid = styled(DataGrid)(({ theme }) => ({
   "& .MuiDataGrid-root": {
-    background: "rgba(30, 30, 50, 0.7)",
+    background: "rgba(142, 147, 172, 0.4)",
     border: "1px solid rgba(99, 102, 241, 0.25)",
     borderRadius: "12px",
     color: "#0f172a",
@@ -65,12 +65,19 @@ const StyledDataGrid = styled(DataGrid)(({ theme }) => ({
     borderColor: "rgba(99, 102, 241, 0.15)",
     color: "#0f172a",
     fontWeight: 600,
+    background: "rgba(142, 147, 172, 0.4)",
   },
   "& .MuiDataGrid-columnHeader": {
-    background: "rgba(99, 102, 241, 0.15)",
+    background: "rgba(142, 147, 172, 0.4)",
     borderColor: "rgba(99, 102, 241, 0.3)",
     color: "#111827",
     fontWeight: 700,
+  },
+  "& .MuiDataGrid-virtualScroller": {
+    background: "rgba(142, 147, 172, 0.4)",
+  },
+  "& .MuiDataGrid-footerContainer": {
+    background: "rgba(142, 147, 172, 0.4)",
   },
   "& .MuiDataGrid-row:hover": {
     background: "rgba(99, 102, 241, 0.18) !important",
